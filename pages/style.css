@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=BIZ+UDMincho&family=Lobster&family=PT+Sans&family=Palette+Mosaic&family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url(/multimedia/pan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width:100%;
+    height: 80px;
+    background: linear-gradient(to right, black, darkgoldenrod);
+}
+nav{
+    display: flex;
+    justify-content:end;
+    flex-wrap: wrap;
+    
+}
+nav a{
+    text-decoration: none;
+    margin: 10px 10px 10px 20px;
+    padding: 20px;
+    color: #0e0e0e;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+nav a:hover{
+    color:#082032;
+}
+.section-bienvenidos{
+    /*border: 3px solid black;*/
+    margin-top: 60px;
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+}
+.titulo-bienvenida{
+    color: #4c0027;
+    font-family: 'Aclonica', sans-serif;
+
+}
+.video{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+iframe{
+    margin-top: 20px;
+}
+
+.section-1{
+    background-image: url(../multimedia/fondo-section-1.jpg);
+    background-size: cover;
+    /*border: 3px solid black;*/
+    padding:50px;
+    display: flex;
+    flex-direction: row;
+}
+.historia{
+    display: flex;
+    flex-direction: row;
+}
+h2{
+    color: #082032;
+    font-size:40px;
+    font-family: 'Aclonica', sans-serif;
+
+}
+.parrafo-historia{
+    font-size: 20px;
+}
+p{
+    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+/*productos*/
+.section-2{
+    background-image: url(../multimedia/fondo-section-2.jpg);
+    background-size: cover;
+    padding: 200px;
+    
+}
+
+.titulo-producto{
+    color: blueviolet;
+    text-align: center;
+    border: 2px solid darkgoldenrod;
+    background-color: black;
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 350px);
+    grid-template-areas: 
+    "producto-1 producto-2 producto-3"
+    "producto-4 producto-5 producto-6"
+    
+}
+
+.producto-1{
+    border: 1px solid black;
+    margin: 3px;
+    grid-area: producto-1;
+    background-image: url(../multimedia/pan-hamb-gratin.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: blue;
+    
+}
+.producto-1:hover{
+    border: 3px solid darkgoldenrod;
+
+}
+
+.producto-2{
+    border: 1px solid black;
+    margin: 3px;
+    grid-area: producto-2;
+    background-image: url(../multimedia/pan-papa.jpg);
+    background-size: cover;
+}
+.producto-2:hover{
+    border: 3px solid darkgoldenrod;
+}
+
+.producto-3{
+    
+    border: 1px solid black;
+    margin: 3px;
+    grid-area: producto-3;
+    background-image: url(../multimedia/pizza.jpg);
+    background-size: cover;
+}
+.producto-3:hover{
+    border: 3px solid darkgoldenrod;
+}
+
+.producto-4{
+    border: 1px solid black;
+    margin: 3px;
+    grid-area: producto-4;
+    background-image: url(../multimedia/pan-lomo-clasico.jpg);
+    background-size: cover;
+}
+.producto-4:hover{
+    border: 3px solid darkgoldenrod;
+}
+
+.producto-5{
+    border: 1px solid black;
+    margin: 3px;
+    grid-area: producto-5;
+    background-image: url(../multimedia/pan-lomo-gratin.jpg);
+    background-size: cover;
+}
+.producto-5:hover{
+    border: 3px solid darkgoldenrod;
+}
+
+.producto-6{
+    border: 1px solid black;
+    margin: 3px;
+    grid-area: producto-6;
+    background-image: url(../multimedia/pan-pancho.jpg);
+    background-size: cover;
+}
+.producto-6:hover{
+    border: 3px solid darkgoldenrod;
+}
+.section-3{
+    background-image: url(../multimedia/pan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*border: 3px solid black;*/
+    display: flex;
+    flex-direction: column;
+}
+.formulario{
+    color: #4c0027 ;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+input{
+    background-color: antiquewhite;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+label{
+    color: #4c0027;
+    font-size: larger;
+    display: block;
+}
+textarea{
+    background-color: antiquewhite; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border: 1px solid silver;
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    
+    padding-top: 15px; 
+}
+h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+}
+p{
+    font-size: 25px; 
+    color: #0e0e0e;
+    
+}
+.cuadro-consulta{
+    font-size: 25px;
+    color: #4c0027;
+}
+.section-4{
+    /*border: 1px solid #0e0e0e;*/
+    background-image: url(../multimedia/pan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.titulo-ubicacion{
+    margin-top: 50px;
+    color: #4c0027;
+}
+iframe{
+    margin-top:50px;
+}
+@media screen and ( max-width: 768px){
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, 350px);
+        grid-template-areas: 
+        "producto-1 producto-2"
+        "producto-3 producto-4"
+        "producto-5 producto-6"
+        
+    }
+    
+    .producto-1{
+        border: 1px solid black;
+        margin: 3px;
+        grid-area: producto-1;
+        background-image: url(../multimedia/pan-hamb-gratin.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        color: blue;
+    }
+    .producto-1:hover{
+        border: 3px solid darkgoldenrod;
+    }
+    .producto-2{
+        border: 1px solid black;
+        margin: 3px;
+        grid-area: producto-2;
+        background-image: url(../multimedia/pan-papa.jpg);
+        background-size: cover;
+    }
+    
+    .producto-2:hover{
+        border: 3px solid darkgoldenrod;
+    }
+    .producto-3{
+        border: 1px solid black;
+        margin: 3px;
+        grid-area: producto-3;
+        background-image: url(../multimedia/pizza.jpg);
+        background-size: cover;
+    }
+    .producto-3:hover{
+        border: 3px solid darkgoldenrod;
+    }
+    .producto-4{
+        border: 1px solid black;
+        margin: 3px;
+        grid-area: producto-4;
+        background-image: url(../multimedia/pan-lomo-clasico.jpg);
+        background-size: cover;
+    }
+    .producto-4:hover{
+        border: 3px solid darkgoldenrod;
+    }
+    
+    .producto-5{
+        border: 1px solid black;
+        margin: 3px;
+        grid-area: producto-5;
+        background-image: url(../multimedia/pan-lomo-gratin.jpg);
+        background-size: cover;
+    }
+    .producto-5:hover{
+        border: 3px solid darkgoldenrod;
+    }
+    
+    .producto-6{
+        border: 1px solid black;
+        margin: 3px;
+        grid-area: producto-6;
+        background-image: url(../multimedia/pan-pancho.jpg);
+        background-size: cover;
+    }
+    .producto-6:hover{
+        border: 3px solid darkgoldenrod;
+    }
+}
